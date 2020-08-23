@@ -38,9 +38,9 @@ end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
-  holiday_hash.each do |season_bucket, seaon_holidays|
-    if season_bucket == season
-      holiday_hash[:season_bucket] << {holiday_name: supply_array}
+  holiday_hash.keys.each do |key|
+    if key == season
+      holiday_hash[:season] = {holiday_name: supply_array}
     end
   end
   holiday_hash
