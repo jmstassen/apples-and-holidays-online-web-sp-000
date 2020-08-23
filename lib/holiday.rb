@@ -66,8 +66,8 @@ def all_supplies_in_holidays(holiday_hash)
     holiday_data.each do |holiday, supplies|
       printholiday= holiday.gsub("_"," ").capitalize
       puts "  {printholiday}: {supplies}"
-    puts 
-    
+    puts
+
   end
 
 end
